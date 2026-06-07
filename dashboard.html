@@ -20,9 +20,7 @@ color:white;
 padding-bottom:80px;
 }
 
-/* HEADER REMOVED AS REQUESTED */
-
-/* BALANCE BOX ONLY IN PROFILE */
+/* BALANCE BOX */
 .balance-box{
 margin:20px;
 background:#1e293b;
@@ -55,11 +53,14 @@ cursor:pointer;
 padding:20px;
 }
 
-.task-banner img{
+/* FIXED TASK BANNER */
+.task-banner{
 width:100%;
 border-radius:15px;
+display:block;
 }
 
+/* TASK WITHDRAW */
 .task-withdraw{
 position:absolute;
 top:10px;
@@ -103,7 +104,7 @@ border-radius:10px;
 cursor:pointer;
 }
 
-/* PROFILE SPECIAL */
+/* PROFILE */
 .small-box{
 margin-top:10px;
 background:#111827;
@@ -162,10 +163,14 @@ font-weight:bold;
 display:none;
 }
 
-/* 🔥 ADDED STYLE FOR DROPDOWN */
+/* ADD OPTIONS (FIXED) */
 #addOptions{
-margin-top:10px;
 display:none;
+margin-top:10px;
+}
+
+#addOptions.show{
+display:block;
 }
 
 </style>
@@ -178,6 +183,7 @@ display:none;
 
 <div style="position:relative;">
   <button class="task-withdraw">Withdraw</button>
+
   <img src="Generated Image June 07, 2026 - 6_41PM.png"
        class="task-banner">
 </div>
@@ -213,7 +219,6 @@ display:none;
 <p><strong>Completed Tasks:</strong> 0</p>
 </div>
 
-<!-- 🔥 ADD CARD (UPDATED) -->
 <div class="small-box" id="addCardBtn">➕ Add Card</div>
 
 <div id="addOptions">
@@ -313,16 +318,12 @@ tabs.inviteTab.classList.remove("hidden");
 btns.inviteBtn.classList.add("active");
 }
 
-/* 🔥 ADD CARD TOGGLE FUNCTION */
+/* FIXED TOGGLE */
 const addCardBtn=document.getElementById("addCardBtn");
 const addOptions=document.getElementById("addOptions");
 
 addCardBtn.onclick=()=>{
-if(addOptions.style.display==="block"){
-addOptions.style.display="none";
-}else{
-addOptions.style.display="block";
-}
+addOptions.classList.toggle("show");
 };
 
 </script>
