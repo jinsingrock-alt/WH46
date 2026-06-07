@@ -1,52 +1,148 @@
-<div id="inviteTab" class="tab-content hidden">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WA Earn Dashboard</title>
 
-<!-- BIG TITLE -->
-<div style="text-align:center; margin:20px 0;">
-  <h1 style="font-size:32px; color:#60a5fa;">🎁 INVITE</h1>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+padding-bottom:50px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#111827;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:18px;
+font-weight:bold;
+}
+
+.btn{
+background:#22c55e;
+padding:8px 12px;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.container{
+padding:15px;
+}
+
+.section{
+background:#1e293b;
+padding:15px;
+margin-top:15px;
+border-radius:10px;
+}
+
+.title{
+font-size:16px;
+margin-bottom:10px;
+color:#38bdf8;
+font-weight:bold;
+}
+
+.item{
+padding:8px 0;
+border-bottom:1px solid #334155;
+font-size:14px;
+}
+
+.item:last-child{
+border:none;
+}
+
+.card-btn{
+margin-top:10px;
+background:#3b82f6;
+padding:10px;
+border:none;
+color:white;
+width:100%;
+border-radius:8px;
+}
+
+.logout{
+background:#ef4444;
+margin-top:10px;
+padding:10px;
+border:none;
+width:100%;
+color:white;
+border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+<div class="logo">LOGO</div>
+<button class="btn">Withdraw</button>
 </div>
 
-<!-- USER INFO -->
-<div class="earn-card">
-  <h3>👤 Invited Status</h3>
-  <p><strong>Status:</strong> You are invited</p>
+<div class="container">
+
+<!-- TASK -->
+<div class="section">
+<div class="title">📋 TASK</div>
+<div class="item">Banner Image</div>
+<div class="item">WA Earn Rewards</div>
+<div class="item">VIP WA Tasks</div>
 </div>
 
-<!-- INVITATION CODE -->
-<div class="earn-card" style="margin-top:15px;">
-  <h3>🔑 Invitation Code</h3>
-  <p style="font-size:20px; color:#22c55e; font-weight:bold;">
-    WH45-REF-7891
-  </p>
+<!-- EARNINGS -->
+<div class="section">
+<div class="title">💰 EARNINGS</div>
+<div class="item">Total Earnings</div>
+<div class="item">Total Withdraw</div>
+<div class="item">Earnings History</div>
 </div>
 
-<!-- REFERRAL TERMS -->
-<div class="earn-card" style="margin-top:15px; line-height:1.6;">
-  
-  <p>
-    You will earn ₹50 Referral Bonus when your referred friend completes their first withdrawal successfully.
-  </p>
-
-  <br>
-
-  <h3>Referral Terms:</h3>
-
-  <ul style="padding-left:18px;">
-    <li>Invite your friends using your referral link.</li>
-    <li>Your friend must register through your referral link.</li>
-    <li>The bonus will be credited only after your friend makes their first withdrawal.</li>
-    <li>You will receive ₹50 for each eligible referral.</li>
-    <li>There is no limit to how many friends you can refer.</li>
-    <li>Referral rewards are added automatically to your account.</li>
-    <li>Make sure your friend follows all platform rules and requirements.</li>
-    <li>Invalid or fraudulent referrals will not be rewarded.</li>
-  </ul>
-
+<!-- INVITE -->
+<div class="section">
+<div class="title">🎁 INVITE & EARN</div>
+<div class="item">Gift Banner</div>
+<div class="item">Referral Dashboard</div>
+<div class="item">Referral Terms</div>
 </div>
 
-<!-- BANNER (BOTTOM) -->
-<div style="margin:20px;">
-  <img src="Generated Image June 07, 2026 - 6_53PM.png"
-       style="width:100%; border-radius:15px;">
+<!-- PROFILE -->
+<div class="section">
+<div class="title">👤 PROFILE</div>
+<div class="item">Current Balance</div>
+<div class="item">User Name</div>
+<div class="item">User ID</div>
+<div class="item">Balance</div>
+<div class="item">Completed Tasks</div>
+
+<button class="card-btn">Add Bank Account</button>
+<button class="card-btn">Add UPI ID</button>
+
+<button class="logout">Logout</button>
 </div>
 
 </div>
+
+</body>
+</html>
